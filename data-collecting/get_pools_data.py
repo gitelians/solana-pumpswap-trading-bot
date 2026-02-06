@@ -12,7 +12,7 @@ import os
 NEW_POOLS_API = "https://api.geckoterminal.com/api/v2/networks/solana/new_pools?page=1"
 POOL_DATA_API = "https://api.geckoterminal.com/api/v2/networks/solana/pools/{}" 
 TOKEN_INFO_API = "https://api.geckoterminal.com/api/v2/networks/solana/tokens/{}/info"
-CSV_FILE = "pools_data.csv"
+CSV_FILE = "dataset.csv"
 LIQUIDITY_THRESHOLD = 9999
 LOCKED_LIQUIDITY_THRESHOLD = 89
 # Price intervals
@@ -295,6 +295,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
