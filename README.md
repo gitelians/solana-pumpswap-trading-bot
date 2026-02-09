@@ -11,4 +11,8 @@ Once your dataset is ready, it is time to clean it and prepare it for training: 
 
 ## TRADING
 
-Copy your wallet private key converted in base64 in the .env file and run 'trading_bot.py' calling the .pkl file of the trained model to launch the trading bot. During trading 'active_positions.json' and 'positions_logs' will be created to respectively monitor live trading positions and record past trades.
+Copy your wallet private key converted in base64 in the .env file and run 'trading_bot.py' calling the .pkl file of the trained model to launch the trading bot. Add your Telegram data if you want to push notifications on a Telegram channel: uncomment this script in the end of 'trading_bot.py' to unlock it (lines 403-405).   
+
+During trading 'active_positions.json' and 'positions_logs' will be created to respectively monitor live trading positions and record past trades.
+
+The bot sells if the price has doubled or lost 51%.
